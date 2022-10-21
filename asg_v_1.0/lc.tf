@@ -1,6 +1,6 @@
 resource "aws_launch_configuration" "lc" {
   name            = "${var.env}-main-lc-new"
-  image_id        = "ami-08c40ec9ead489470"
+  image_id        = data.aws_ami.amazon-linux-2.image_id
   instance_type   = var.instance_type
   user_data       = data.template_file.user_data.rendered
   security_groups = [aws_security_group.main.id]

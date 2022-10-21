@@ -1,8 +1,0 @@
-launch configuration
--  name 
-- AMI
-- instance type
-- user data
-- security group for launch configuration : 
-  - inbound and outbound
-- key pair

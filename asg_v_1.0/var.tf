@@ -34,3 +34,13 @@ variable "vpc_zone_identifier" {
   description = "subnets to create ec2 instance on"
   default     = ["subnet-0e1fc95d57b265357", "subnet-088fe1e66ac20f627"]
 }
+variable "ingress_ports" {
+  type        = list(string)
+  description = "list for ingress ports for sg"
+  default     = ["22", "80"]
+}
+variable "ingress_cidrs" {
+  type        = list(string)
+  description = "cidrs for ingress ports"
+  default     = ["3.86.246.132/32", "0.0.0.0/0"]
+}
