@@ -42,5 +42,5 @@ variable "ingress_ports" {
 variable "ingress_cidrs" {
   type        = list(string)
   description = "cidrs for ingress ports"
-  default     = ["3.86.246.132/32", "0.0.0.0/0"]
+  default     = ["44.212.71.220/32", "0.0.0.0/0"]
 }
